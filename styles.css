@@ -1,0 +1,168 @@
+/*General Declarationv*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: black;
+    background: whitesmoke;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+h3,
+h4 {
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    color: rgb(83, 127, 168);
+    margin-bottom: 10px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.title {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.underline {
+    background: #53abd8;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    width: 80px;
+}
+
+.container {
+    width: 900px;
+    height: 700px;
+    margin-top: 100px;
+
+}
+
+.review {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+    background: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+    position: relative;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: #49a6e9;
+    color: #fff;
+}
+
+.img-container::before {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    border-radius: 50%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(73, 166, 233);
+}
+
+#author {
+    margin-bottom: 5px;
+}
+
+#person-img {
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    background: transparent;
+    border-color: transparent;
+    margin: 0 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    color: rgb(139, 203, 249);
+    font-size: 25px;
+}
+
+.random-btn {
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    border-color: rgb(73, 166, 233);
+    cursor: pointer;
+    margin-top: 10px;
+    background: rgb(235, 247, 255);
+    color: rgb(73, 166, 233);
+    padding: 5px 20px;
+
+}
+
+#job {
+    color: rgb(73, 166, 233);
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
